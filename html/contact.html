@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Victor Moizan - À propos</title>
+        <link rel="stylesheet" href="../styles/style_contact.css"/>
+        <link rel="icon" href="../ressources/img/favicon/favicon.ico"/>
+    </head>
+<body>
+
+<div id="header">
+    <a id="nom" href="home.html">Victor Moizan<span>*</span></a>
+    <a class="lien bordDroite" href="home.html">Retour aux projets</a>
+    <a class="lien" href="curriculum.html">Mon CV</a>
+</div>
+
+<section>
+    <div class="sectionGauche">
+        <button id="languageSwitch" onclick="langSwitch()">FR/EN</button>
+        <p id="presentation">Salut à vous et bienvenue sur mon site (toujours en construction). Je suis un jeune étudiant en Design Graphique 
+            en cours d'obtention d'un Diplôme National des Métiers d’Art et du Design (anciennement BTS) à Toulouse. 
+
+            <br><br>En recherche de polyvalence dans ma pratique, je suis prêt à découvrir tout ce qui touchera de près ou de loin au graphisme.
+             J'aime expérimenter de nouvelles techniques manuelles et les approfondir pour avoir un maximum de cordes à mon arc.
+
+             <br><br>Je suis actuellement à la recherche d’un stage conventionné de 4 semaines à partir 4 juillet 2022 pour parfaire mon apprentissage.
+             Alors si mon travail vous séduit n’hésitez pas à me contacter.
+            </p>
+        </div>
+    
+    <div class="sectionDroite">
+        <img class="imageProfil" src="../ressources/img/profil/profil.jpg" alt="photo de moi">
+        <h2>Victor Moizan</h2>
+        <a class="infos" href="mailto:v.moizanvictor@gmail.com">v.moizanvictor@gmail.com</a>
+        <p class="infos">06 37 05 99 46</p>
+        <a class="infos" href="https://www.linkedin.com/in/victormoizan" target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    <p>Site en cours d'écriture. Actualisation régulière.</p>
+    <p class="credits">Victor Moizan, 2024</p>
+</footer>
+
+<script>
+
+let interrupteur = 0;
+
+function langSwitch(){
+  if (interrupteur == 0){
+    document.getElementById("presentation").innerHTML = "Hi and welcome on my website. I’m a young French student working on a DN_MADe in Graphic Design based in Toulouse in the south-west of France. It’s a 3-year technical degree specialised in corporate identity. <br><br> I’m interested in every practice in graphic design but most in typography. I’m searching of polyvalence in my expertise and so I’m trying different form of practice. <br><br> I’m currently in search of a 4 weeks internship to increase my learnings. If you like my work, don’t hesitate and contact me.";
+    interrupteur = 1 ;
+  }else{
+    document.getElementById("presentation").innerHTML = "Salut à vous et bienvenue sur mon site (toujours en construction). Je suis un jeune étudiant en Design Grpahique en cours d'obtention d'un Diplôme National des Métiers d’Art et du Design (anciennement BTS) à Toulouse. <br><br>En recherche de polyvalence dans ma pratique, je suis prêt à découvrir tout ce qui touchera de près ou de loin au graphisme. J'aime expérimenter de nouvelles techniques manuelles et les approfondir pour avoir un maximum de cordes à mon arc.<br><br> Je suis actuellement à la recherche d’un stage conventionné de 4 semaines à partir 4 juillet 2022 pour parfaire mon apprentissage. Alors si mon travail vous séduit n’hésitez pas à me contacter.<br>";
+    interrupteur = 0 ;
+  }
+}
+
+</script>
+</body>
+</html>
