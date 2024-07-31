@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Luciole";
+    src:
+        local(Luciole),
+        url("../fonts/Luciole-Regular.ttf") format("truetype");
+    src:
+        local(Luciole),
+        url("../fonts/Luciole-Regular-Italic.ttf") format("truetype");
+    src:
+        local(Luciole),
+        url("../fonts/Luciole-Bold.ttf") format("truetype");
+
+    font-family: "Jost";
+    src:
+        local(Jost),
+        url("../fonts/Jost-800-HeavyItalic.ttf") format("truetype");
+}
+
+body{
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    overflow-x: hidden;
+    font-size: 1vw;
+    padding-top: 45vw;
+    font-family: "Luciole", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#topButton{
+    visibility:hidden;
+    background-color: none;
+    position: fixed;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: #19d782;
+    bottom: 5%;
+    right: 2%;
+    height: 3vw;
+    width: 3.3vw;
+    text-align: center;
+    padding-top: 0.3%;
+    border-radius: 25px;
+    z-index: 9;
+}
+
+#header{
+    background-color: #19d782;
+    z-index: 1;
+    margin-left: -4vw;
+    position: fixed;
+    top: 0;
+    width: 110%;
+    height: 40vw;
+    transition: 0.5s;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0px -10px 40px grey;
+}
+
+#nom{
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    margin-left: 5vw;
+    font-size: 10em;
+    flex: 0 1 50vw;
+    transition: 0.5s;
+    height: 30vw;
+    margin-top: 0.8em;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+span{
+    color: #ffeb23;
+}
+
+#lien1{
+    background-color: none;
+    text-decoration: none;
+    color: white;
+    border-right: solid white 2px;
+    font-size: 1.3em;
+    text-align: center;
+    height: 2vw;
+    flex: 0 1 20vw;
+    margin-top: 30%;
+    transition: 0.5s;
+}
+
+#lien2{
+    background-color: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    height: 2vw;
+    flex: 0 1 20vw;
+    margin-top: 30%;
+    transition: 0.5s;
+}
+
+.colonneImages{
+    background-color: none;
+    display: inline-block;
+    flex-direction: column;
+    width: 32.5%;
+    vertical-align: top;
+}
+
+img{
+    border-radius: 1%;
+    z-index: 9;
+    max-height: 100%;
+    width: 98%;
+    margin: 1%;
+    flex: 1;
+    transition: 0.4s;
+    box-shadow: 0px 0px 0.1px grey;
+}
+
+img:hover {
+    box-shadow: 0px 0px 20px grey;
+}
+
+footer{
+    background-color: #ffeb23;
+    color: white;
+    position: relative;
+    left: -10vw;
+    bottom: -10vw;
+    margin-top: 10vh;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 112vw;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.credits{
+    font-size: 0.7em;
+    font-style: normal;
+}
+
+
+@media all and (orientation: portrait){
+
+body{
+    padding-top: 90vw;
+}
+
+#header{
+    margin-left: -5vw;
+    height: 50vw;
+}
+
+#nom{
+    background-color: none;
+    font-size: 15em;
+    height: 10vw;
+    margin-top: 3%;
+    width: 70vw;
+    flex: none;
+    position: absolute;
+}
+
+#topButton {
+    display: none;
+}
+
+#lien1{
+    background-color: none;
+    border-right: solid white 1px;
+    display: none;
+    font-size: 4em;
+    height: 8vw;
+    margin-left: 1.5vw;
+    flex: 0 1 40vw;
+}
+
+#lien2{
+    background-color: none;
+    font-size: 4em;
+    display: none;
+    height: 8vw;
+    margin-top: 15vh;
+    flex: 0 1 55vw;
+}
+
+.colonneImages{
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 0%;
+    width: 100%;
+    vertical-align: top;
+}
+
+image{
+    filter: grayscale(0) brightness(1) invert(0);
+    transition: none;
+}
+
+footer{
+    margin-top: 50vh;
+    font-size: 2em;
+}
+
+}
