@@ -1,15 +1,4 @@
 @font-face {
-    font-family: "Luciole";
-    src:
-        local(Luciole),
-        url("../fonts/Luciole-Regular.ttf") format("truetype");
-    src:
-        local(Luciole),
-        url("../fonts/Luciole-Regular-Italic.ttf") format("truetype");
-    src:
-        local(Luciole),
-        url("../fonts/Luciole-Bold.ttf") format("truetype");
-
     font-family: "Jost";
     src:
         local(Jost),
@@ -23,7 +12,7 @@ body{
     overflow-x: hidden;
     font-size: 1vw;
     padding-top: 45vw;
-    font-family: "Luciole", sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
 }
